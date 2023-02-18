@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Order Summary Component</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #e0e8ff;
+        background-image: url("background.svg");
+        background-repeat: no-repeat;
+        background-size: 2000px 437px;
+      }
+      .content {
+        width: 450px;
+        height: 697px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        margin: auto;
+        border-radius: 20px;
+      }
+      .price-wrapper {
+        padding: 25px;
+        background-color: #f7f9ff;
+        display: flex;
+        align-items: center;
+        border-radius: 11px;
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+        font-family: Red Hat Display;
+        width: 288px;
+        height: 28px;
+        font-weight: 900;
+        color: #1f2e55;
+        font-size: 22px;
+        line-height: 28px;
+        font-style: normal;
+        padding-top: 45px;
+        padding-bottom: 10px;
+      }
+      h2 {
+        padding-top: 17px;
+        padding-bottom: 20px;
+        width: 354px;
+        height: 78px;
+        top: 319px;
+        left: 48px;
+        color: #717fa6;
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+      }
+      h3 {
+        background-color: #ffffff;
+        color: #1f2e55;
+        font-weight: 900;
+        font-size: 16px;
+        font-family: red Hat Display;
+        line-height: 21.17px;
+        margin: 0;
+        padding-left: 20px;
+        padding-bottom: 6px;
+      }
+      h4 {
+        color: #717fa6;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: red Hat Display;
+        line-height: 20px;
+        margin: 0;
+        padding-left: 20px;
+      }
+      button {
+        border: none;
+        color: #382ae1;
+        font-weight: 700;
+        font-size: 14px;
+        font-family: red Hat Display;
+        line-height: 19px;
+      }
+      .payment-button {
+        color: #ffffff;
+        background-color: #382ae1;
+        box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+        border-radius: 11px;
+        width: 354px;
+        height: 50px;
+      }
+      h5 {
+        color: #717fa6;
+        font-weight: 900;
+        font-size: 15px;
+        font-family: red Hat Display;
+        line-height: 20px;
+        padding-top: 32px;
+      }
+      .main-button {
+        margin-left: 100px;
+        text-decoration-line: underline;
+        background-color: #f7f9ff;
+      }
+      .price-box {
+        display: flex;
+        flex-direction: column;
+      }
+      .button-wrapper {
+        padding-top: 32px;
+      }
+      img {
+        max-width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      .content-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .whole-container {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="whole-container">
+      <div class="content">
+        <img src="/illustration-hero.svg" />
+        <div class="content-inner">
+          <h1 class="order">Order Summary</h1>
+          <h2>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </h2>
+
+          <div class="price-wrapper">
+            <div class="icon-music">
+              <img src="icon-music.svg" />
+            </div>
+            <div class="price-box">
+              <h3>Annual Plan</h3>
+              <h4>$59.99/year</h4>
+            </div>
+            <button class="main-button">Change</button>
+          </div>
+          <div class="button-wrapper">
+            <button class="payment-button">Proceed to Payment</button>
+          </div>
+          <h5>Cancel Order</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
